@@ -1,0 +1,36 @@
+# Confidential source data
+datasets/*.csv
+datasets/*.xlsx
+datasets/*.xls
+datasets/*.parquet
+datasets/*.json
+
+# Generated outputs may contain confidential or derived row-level data
+outputs/*
+!outputs/.gitkeep
+
+# Client-provided documents and metadata
+*.pdf
+meta_data.txt
+
+# Jupyter and Python artifacts
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments and secrets
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
